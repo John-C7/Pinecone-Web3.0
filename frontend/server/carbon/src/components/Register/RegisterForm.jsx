@@ -19,12 +19,15 @@ export const RegisterForm = () => {
                     <MdEmail className='icon'/>
                 </div>
                 <div className='input-box'>
-                    <input type="password" placeholder='New Password' required />
-                    <FaLock className='icon'/>
+                    <input type="text" placeholder='First Name' required />
+                    <FaUser className='icon'/>
                 </div>
-
                 <div className='input-box'>
-                    <input type="password" placeholder='Confirm Password' required />
+                    <input type="text" placeholder='Last Name' required />
+                    <FaUser className='icon'/>
+                </div>
+                <div className='input-box'>
+                    <input type="password" placeholder='New Password' required />
                     <FaLock className='icon'/>
                 </div>
                 <button type='submit'>Sign Up</button>
