@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+a{
+    text-decoration: none;
+}
+.okay2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo2{
+    font-size: 32px;
+    color: #fff;
+    font-weight:700;
+}
+.bar2 button{
+    position: relative;
+    font-size: 18px;
+    padding: 0.4rem;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.bar2 button:hover {
+    background-color: grey;
+}
+.bar2 a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.bar2 a::before{
+    content: '';
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.bar2 a:hover::before{
+    width: 100%;
+}

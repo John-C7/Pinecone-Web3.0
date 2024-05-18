@@ -91,22 +91,24 @@ const Dashboard = () => {
           </div>
         </div>
         <br />
-        <h2>Projects</h2>
-        <div className='projects'>
-          {projects.map(({ id, img, carboncredits, type, desc }) => {
-                return(<div className='pn'>
-                  <p>Company Id : {id}</p>
-                  <br />
-                  <p>Carbon Credits : {carboncredits}</p>
-                  <br />
-                  <p>Type Of Project : {type}</p>
-                  <br />
-                  <p>Description : {desc}</p>
-                  <img src={img} alt="project-image" />
-                </div>
-                )
-              })
-            }
+        <div className='project-container'>
+          <h2>Projects</h2>
+          <div className='projects'>
+            {projects.map(({ id, img, carboncredits, type, desc }) => {
+                  return(<div className='pn'>
+                    <p>Company Id : {id}</p>
+                    <br />
+                    <p>Carbon Credits : {carboncredits}</p>
+                    <br />
+                    <p>Type Of Project : {type}</p>
+                    <br />
+                    <p>Description : {desc}</p>
+                    <img src={img} alt="project-image" />
+                  </div>
+                  )
+                })
+              }
+          </div>
         </div>
       </div>
     </div>

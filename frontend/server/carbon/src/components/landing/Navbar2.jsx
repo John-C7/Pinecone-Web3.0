@@ -1,41 +1,21 @@
 // Navbar2.js
+import React from 'react';
+import './Navbar2.css';
 
-import React from "react";
-
-const Navbarnew = () => {
+const Navbar2 = () => {
   return (
-    <nav
-      style={{
-        backgroundColor: "white",
-        color: "black",
-        padding: "10px 20px",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-      }}
-    >
-      <div>
-        <a
-          href="#platform"
-          style={{ color: "black", textDecoration: "none", margin: "0 10px" }}
-        >
-          THE PLATFORM
-        </a>
-        <a
-          href="#company"
-          style={{ color: "black", textDecoration: "none", margin: "0 10px" }}
-        >
-          COMPANY
-        </a>
-        <a
-          href="#demo"
-          style={{ color: "black", textDecoration: "none", margin: "0 10px" }}
-        >
-          Book a demo
-        </a>
-      </div>
-    </nav>
-  );
-};
+    <header className='okay2'>
+        <a href="/" className="logo2">Logo</a>
+        <nav className='bar2'>
+            <a href="/">Home</a>
+            <a href="/">Transactions</a>
+            <a href="/">Services</a>
+            <a href="/">Contact</a>
+            <button href="/login">Login</button>
+            <button href="/register">Sign Up</button>
+        </nav>
+    </header>
+  )
+}
 
-export default Navbarnew;
+export default Navbar2

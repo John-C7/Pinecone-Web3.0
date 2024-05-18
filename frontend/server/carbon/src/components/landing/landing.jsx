@@ -1,17 +1,17 @@
 import React from 'react';
-import Navbarnew from './Navbar2';
+import Navbar2 from './Navbar2.jsx';
 import './landing.css'; 
 import Footer from './footer';
 const Landing = () => {
   return (
     <div>
       <div className='landing-nav'>
-        <Navbarnew />
+        <Navbar2 />
       </div>
       <div className='background-video'>
         <video autoPlay muted loop>
-          <source src="path-to-your-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          <source src="./video.mp4" type='mp4'/>
+          {/* Your browser does not support the video tag. */}
         </video>
         <div className='landing-box1'>
           <div className='landing-box1-text1'>

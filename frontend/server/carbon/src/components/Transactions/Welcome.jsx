@@ -1,7 +1,6 @@
 import React from "react";
-// import { AiFillPlayCircle } from "react-icons/ai";
-import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
+import { TbBrandCarbon } from "react-icons/tb";
 import './transaction.css';
 
 const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
@@ -47,7 +46,7 @@ const Welcome = () => {
             </div>
             <div className={`${companyCommonStyles}`}>Security</div>
             <div className={`sm:rounded-tr-2xl ${companyCommonStyles}`}>
-              Ethereum
+              Carbon Credits
             </div>
             <div className={`sm:rounded-bl-2xl mr-15 ${companyCommonStyles}`}>
               Web 3.0
@@ -63,7 +62,7 @@ const Welcome = () => {
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
                 <div className="w-10 h-10 rounded-full border-2 border-white flex justify-center items-center">
-                  <SiEthereum fontSize={21} color="#fff" />
+                  <TbBrandCarbon fontSize={21} color="#fff" />
                 </div>
                 <BsInfoCircle fontSize={17} color="#fff" />
               </div>
@@ -74,8 +73,11 @@ const Welcome = () => {
                 <p className="text-white font-light text-sm">
                   Balance :
                 </p>
+                <p className="text-white font-light text-sm">
+                  Wallet Key :
+                </p>
                 <p className="text-white font-semibold text-lg mt-1">
-                  Ethereum
+                  Carbon Credits
                 </p>
               </div>
             </div>
@@ -108,7 +110,7 @@ const Welcome = () => {
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
                 <div className="w-10 h-10 rounded-full border-2 border-white flex justify-center items-center">
-                  <SiEthereum fontSize={21} color="#fff" />
+                  <TbBrandCarbon fontSize={21} color="#fff" />
                 </div>
                 <BsInfoCircle fontSize={17} color="#fff" />
               </div>
@@ -116,8 +118,11 @@ const Welcome = () => {
                 {/* <p className="text-white font-light text-sm">
                   {shortenAddress(currentAccount)}
                 </p> */}
+                <p className="text-white font-light text-sm">
+                  Balance :
+                </p>
                 <p className="text-white font-semibold text-lg mt-1">
-                  Ethereum
+                  Carbon Credits
                 </p>
               </div>
             </div>

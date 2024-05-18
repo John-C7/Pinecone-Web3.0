@@ -8,11 +8,11 @@ import {
 import "./App.css";
 import { LoginPage } from "./components/Login/LoginPage";
 import { RegisterPage } from "./components/Register/RegisterPage";
-import Navbar from "./components/Navbar/Navbar";
 import Landing from "./components/landing/landing";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Gemini from "./components/chatbot/chatbot";
 import { TransactionPage } from "./components/Transactions/TransactionPage";
+import Navbar3 from "./components/Navbar3/Navbar3";
 
 const App = () => {
   return (
@@ -29,7 +29,7 @@ const AppRoutes = () => {
 
   return (
     <>
-      {showNavbar && <Navbar userId={1} />} {/*demo logged-in user's ID */}
+      {showNavbar && <Navbar3 userId={1} />} {/*demo logged-in user's ID */}
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/chat" element={<Gemini />} />
