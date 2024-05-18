@@ -1,5 +1,11 @@
 import "./App.css";
+import { LoginPage } from "./components/Login/LoginPage";
+import { RegisterPage } from "./components/Register/RegisterPage";
 
 export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      <RegisterPage/>
+    </>
+  )
 }
