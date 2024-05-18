@@ -10,7 +10,8 @@ import { LoginPage } from "./components/Login/LoginPage";
 import { RegisterPage } from "./components/Register/RegisterPage";
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./components/landing/landing";
-import Dashboard from "./components/Dashboard/Dashboard";
+import Dashboard from "./components/dashboard/Dashboard";
+import Gemini from "./components/chatbot/chatbot";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const AppRoutes = () => {
       {showNavbar && <Navbar userId={1} />} {/*demo logged-in user's ID */}
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/chat" element={<Gemini />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
