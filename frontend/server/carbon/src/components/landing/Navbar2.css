@@ -33,14 +33,18 @@ a{
 .bar2 button:hover {
     background-color: grey;
 }
-.bar2 a{
+.bt{
+    color: black;
+    text-decoration: none;
+}
+.bt2{
     position: relative;
     font-size: 18px;
     color: #fff;
     font-weight: 500;
     margin-left: 40px;
 }
-.bar2 a::before{
+.bt2::before{
     content: '';
     position: absolute;
     top:100%;
@@ -51,6 +55,6 @@ a{
     transition: .3s;
 }
 
-.bar2 a:hover::before{
+.bt2:hover::before{
     width: 100%;
 }

@@ -7,12 +7,16 @@ const Navbar2 = () => {
     <header className='okay2'>
         <a href="/" className="logo2">Logo</a>
         <nav className='bar2'>
-            <a href="/">Home</a>
-            <a href="/">Transactions</a>
-            <a href="/">Services</a>
-            <a href="/">Contact</a>
-            <button href="/login">Login</button>
-            <button href="/register">Sign Up</button>
+            <a href="/" className='bt2'>Home</a>
+            <a href="/" className='bt2'>Transactions</a>
+            <a href="/" className='bt2'>Services</a>
+            <a href="/" className='bt2'>Contact</a>
+            <button>
+              <a href="/login" className='bt'>Login</a>
+            </button>
+            <button>
+              <a href="/register" className='bt'>Sign Up</a>
+            </button>
         </nav>
     </header>
   )
