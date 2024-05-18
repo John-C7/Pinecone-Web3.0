@@ -10,8 +10,9 @@ import { LoginPage } from "./components/Login/LoginPage";
 import { RegisterPage } from "./components/Register/RegisterPage";
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./components/landing/landing";
-import Dashboard from "./components/dashboard/Dashboard";
+import Dashboard from "./components/Dashboard/Dashboard";
 import Gemini from "./components/chatbot/chatbot";
+import { TransactionPage } from "./components/Transactions/TransactionPage";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const AppRoutes = () => {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/transactions" element={<TransactionPage />} />
       </Routes>
     </>
   );

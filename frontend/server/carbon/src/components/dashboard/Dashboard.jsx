@@ -59,9 +59,10 @@ const Dashboard = () => {
         <h1>Dashboard</h1>
         <br />
         <div className='topic'> 
-          <h2>Recent Transactions</h2>
-          <h2>Balance</h2>
+          
+          
         </div>
+        <h2>Recent Transactions</h2>
         <div className="rate-tran">
           <div className='recent-tran'>
           {recentTran.map(({ id, date, desc, keyword }) => {
@@ -79,11 +80,14 @@ const Dashboard = () => {
           }           
           </div>
           <div className='ratecc'>
-            <div className='balance'>
-              <img src={cc} alt="Carbon-credits:" />
-              <p className='value'> = {carbon_balance}</p>
+            <div className='container'>
+              <h2>Balance</h2>
+              <div className='balance'>
+                <img src={cc} alt="Carbon-credits:" />
+                <br />
+                <h3 className='value'> = {carbon_balance}</h3>
+              </div>
             </div>
-
           </div>
         </div>
         <br />
