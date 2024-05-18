@@ -32,8 +32,8 @@ const Welcome = () => {
 
   return (
     <div className="flex w-full justify-center items-center">
-      <div className="flex mf:flex-row flex-row items-start justify-between md:p-20 py-12 px-4" id="mainbox">
-        <div className="flex flex-1 justify-start items-start flex-col mf:mr-10">
+      <div className="flex flex-row items-start justify-between p-20 py-15 px-1" id="mainbox">
+        <div className="flex flex-1 justify-start items-start flex-col mf:mr-10 mr-10">
           <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
             Send Carbon Credits <br /> across the world
           </h1>
@@ -41,25 +41,24 @@ const Welcome = () => {
             Explore the carbon world. Buy and sell carbon credits easily on Pinecone.
           </p>
 
-          <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
-            <div className={`rounded-tl-2xl ${companyCommonStyles}`}>
+          <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10 mr-10">
+            <div className={`rounded-tl-2xl mr-15 ${companyCommonStyles}`}>
               Reliability
             </div>
-            <div className={companyCommonStyles}>Security</div>
+            <div className={`${companyCommonStyles}`}>Security</div>
             <div className={`sm:rounded-tr-2xl ${companyCommonStyles}`}>
               Ethereum
             </div>
-            <div className={`sm:rounded-bl-2xl ${companyCommonStyles}`}>
+            <div className={`sm:rounded-bl-2xl mr-15 ${companyCommonStyles}`}>
               Web 3.0
             </div>
-            <div className={companyCommonStyles}>Low Fees</div>
+            <div className={`${companyCommonStyles}`}>Low Fees</div>
             <div className={`rounded-br-2xl ${companyCommonStyles}`}>
               Blockchain
             </div>
           </div>
         </div>
-
-        <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
+        <div className="flex flex-col flex-1 items-center justify-start w-80 mf:mt-0 mt-10 ml-10">
           <div className="p-3 flex justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card .white-glassmorphism ">
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
@@ -104,7 +103,7 @@ const Welcome = () => {
 
         </div>
 
-        <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
+        <div className="flex flex-col flex-1 items-center justify-start w-80 mf:mt-0 mt-10 ml-10">
           <div className="p-3 flex justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card .white-glassmorphism ">
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
