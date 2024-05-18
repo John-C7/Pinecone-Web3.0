@@ -10,7 +10,7 @@ import { LoginPage } from "./components/Login/LoginPage";
 import { RegisterPage } from "./components/Register/RegisterPage";
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./components/landing/landing";
-import Dashboard from "./components/dashboard/dashborad";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 const App = () => {
   return (
