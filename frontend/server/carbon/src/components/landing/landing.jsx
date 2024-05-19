@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar2 from './Navbar2.jsx';
 import './landing.css'; 
 import Footer from './footer';
+import video1 from './video.mp4'
 const Landing = () => {
   return (
     <div>
@@ -9,10 +10,11 @@ const Landing = () => {
         <Navbar2 />
       </div>
       <div className='background-video'>
-        <video autoPlay muted loop>
-          <source src="./video.mp4" type='mp4'/>
-          {/* Your browser does not support the video tag. */}
-        </video>
+          <video>
+          <source src={video1} type='video/mp4'/>
+          </video>
+         
+        
         <div className='landing-box1'>
           <div className='landing-box1-text1'>
             <h3>The complete solution for the carbon market of the future</h3>
